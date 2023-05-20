@@ -1,0 +1,73 @@
+.thumbnail{
+  width:100%;/*when width is changed height is also maintained*/ 
+  /*display:block;/*convert inline block element INPUT and thumbnail image to block element */
+  
+} 
+
+/*
+.video-author,/*2 sets of css styles that are same are targeted using
+.video-stats{/* block element converted to inline block element using display property
+  display:block;
+}*/
+.video-title{
+  margin-top:0;
+  font-size:14px;
+  font-weight: 500;/*corresponds to medium*/
+  line-height:20px;
+  margin-bottom:10px;
+}
+
+.video-info-grid{
+  display:grid;
+  grid-template-columns:50px 1fr;
+}
+.profile-picture{
+  width:36px;
+  border-radius: 50px;
+}
+.thumbnail-row{
+  margin-bottom:8px;
+  position:relative;
+}
+.video-stats,
+.video-author{
+  font-size:12 px;
+  color:rgb(96, 96, 96);
+}
+
+.video-author{
+  margin-bottom:4px;
+}
+.video-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap:15px;
+  row-gap:40px;
+
+  
+}
+@media(max-width:750px){
+  /*making the design responsive*/
+  .video-grid{
+    grid-template-columns: 1fr 1fr;/*when minimizing if size 750 bhanda less bhayo bhane only 2 thumbnails in the row*/
+
+  }
+
+}
+@media(min-width:1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;/*when size hits 1000 pixel each column has 4 thumbnails*/
+  }
+}
+.video-time{
+  
+  font-size: 12px;
+  font-weight: 500;
+  background-color: black;
+  color:white;
+  position:absolute;
+  bottom:8px;
+  right:5px;
+  border-radius: 2px;;
+  padding:4px;/*padding in all directions*/
+}
